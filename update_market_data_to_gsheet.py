@@ -35,7 +35,8 @@ from google.oauth2.service_account import Credentials
 
 SHEET_NAME = os.getenv("GSHEET_NAME", "VNDIRECT_BI_DATA")
 WORKSHEET_NAME = os.getenv("GSHEET_WORKSHEET", "market_data")
-SERVICE_ACCOUNT_FILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "service_account.json")
+
+SERVICE_ACCOUNT_FILE = "vndirect-bi-494805-5afbe1a8198f.json"
 
 START_DATE = os.getenv("START_DATE", "2024-01-01")
 END_DATE = os.getenv("END_DATE", date.today().strftime("%Y-%m-%d"))
